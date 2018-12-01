@@ -3,12 +3,8 @@ const Meme = require('../models/Meme');
 const MemeController = {};
 
 MemeController.index = async function(req, res, next) {
-    try {
-        let memes = await Meme.find();
-        return res.status(200).json(memes);
-    } catch (error) {
-        return res.status(500).json({error: error, message: "No se encontro ningun usuario"});
-    }
+    let memes = await Meme.find();
+    res.status(200).json(memes);
 }
 
 MemeController.findOne = async function(req, res, next)  {

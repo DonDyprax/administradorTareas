@@ -1,8 +1,12 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+h1 {
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: darkgreen; 
 }
 
-a {
-  color: #00B7FF;
+body {
+  padding: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
 }
+
+
