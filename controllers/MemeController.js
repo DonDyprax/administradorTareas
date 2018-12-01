@@ -20,14 +20,13 @@ MemeController.findOne = async function(req, res, next)  {
 }
 
 MemeController.store = function(req, res, next) {
-    let meme = new Meme();
-    let data = {
+    let meme = new Meme({
         origen: req.body.origen,
         idioma: req.body.idioma,
         anio: req.body.anio
-    }
-
-    meme(data).save(function(err){
+    });
+    
+    meme.save(function(err){
         if(!err){
             return res.status(200).json({ "message": "Se almaceno el meme exitosamente"});
         } else {
@@ -62,3 +61,5 @@ MemeController.delete = function(req, res, next) {
         }
     });
 }
+
+module.exports = MemeController;

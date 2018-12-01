@@ -4,15 +4,15 @@ var router = express.Router();
 const MemeController = require('../controllers/MemeController');
 
 /* GET memes listing. */
-//router.get('/', MemeController.index);
+router.get('/', MemeController.index);
 
-//router.get('/:id', MemeController.findOne);
+router.get('/:id', MemeController.findOne);
 
-//router.post('/', MemeController.store);
+router.post('/', MemeController.store);
 
-//router.put('/:id', MemeController.update);
+router.put('/:id', MemeController.update);
 
-//router.delete('/:id', MemeController.delete);
+router.delete('/:id', MemeController.delete);
 
 module.exports = router;
 
