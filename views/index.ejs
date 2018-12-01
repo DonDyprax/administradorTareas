@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Administrador de Memes</h1>
-    <form action="/memes/" method="POST" id="formRegistrar">
+    <form action="/api/memes/" method="POST" id="formRegistrar">
       <input type="text" name="origen" id="origen">
       <label for="origen">Origen</label>
 
@@ -18,5 +18,17 @@
 
       <button type="submit">Enviar</button>
     </form>
+
+    <table id="tablaRegistros">
+      <thead>
+        <th>ID</th>
+        <th>Origen</th>
+        <th>Idioma</th>
+        <th>Year</th>
+      </thead>
+      <tbody id="filas">
+
+      </tbody>
+    </table>
   </body>
 </html>
