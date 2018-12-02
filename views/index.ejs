@@ -2,26 +2,27 @@
 <html>
   <head>
     <title>Administrador de Memes</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
     <div class="container">
       <div class="card">
-        <div class="card-header">
-            <h1 class="bg-info text-white">Administrador de Memes</h1>
+        <div class="card-header bg-info">
+            <h1 class="text-white">Administrador de Memes</h1>
         </div>
         <div class="card-body">
             <form action="/api/memes/" method="POST" id="formRegistrar" class="form-group">
               <label for="origen">Origen</label>
-              <input type="text" name="origen" id="origen">
+              <input type="text" name="origen" id="origen" placeholder="Origen">
               
               <label for="idioma">Idioma</label>
-              <input type="text" name="idioma" id="idioma">
+              <input type="text" name="idioma" id="idioma" placeholder="Idioma">
               
               <label for="anio">Year</label>
-              <input type="text" name="anio" id="anio">
+              <input type="text" name="anio" id="anio" placeholder="Anio">
               
-              <button class="btn btn-success" type="submit">Enviar</button>
+              <button class="btn btn-success" type="submit"> <i class="far fa-share-square"></i> Enviar</button>
             </form>
         </div>
       </div>
